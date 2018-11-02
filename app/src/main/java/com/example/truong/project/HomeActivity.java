@@ -1,0 +1,33 @@
+package com.example.truong.project;
+
+import android.content.Intent;
+import android.media.Image;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+
+public class HomeActivity extends AppCompatActivity {
+    public static EditText edt_search;
+    private Button qrcodobar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+//        getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+//        getSupportActionBar().hide();
+          setContentView(R.layout.activity_home);
+            edt_search = (EditText)findViewById(R.id.edt_search);
+            qrcodobar = (Button)findViewById(R.id.qrcodobar);
+
+             qrcodobar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(getApplicationContext(),ScanCodeActivity.class));
+                }
+            });
+    }
+
+}

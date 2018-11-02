@@ -73,21 +73,22 @@
         android:layout_marginEnd="110dp"
         android:layout_marginStart="110dp"
         android:layout_marginTop="456dp"
-        android:paddingTop="12dp"
         android:background="@drawable/edit_scancode"
         android:ems="10"
         android:hint="Scan code"
         android:inputType="textPersonName"
-        android:paddingLeft="65dp"
+        android:paddingLeft="35dp"
+        android:gravity="center"
         android:textColor="@color/ColorTextInput"
         android:textColorHint="@color/ColorTextHinQrcodeInput"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/search"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginBottom="8dp"
@@ -119,7 +120,8 @@
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <Button
+        android:id="@+id/qrcodobar"
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:layout_marginBottom="8dp"

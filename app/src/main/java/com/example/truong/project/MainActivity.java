@@ -1,25 +1,11 @@
 package com.example.truong.project;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
-
-
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             btnLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i1 = new Intent(MainActivity.this,Activity_home.class);
+                    Intent i1 = new Intent(MainActivity.this,HomeActivity.class);
                     startActivity(i1);
                 }
             });
@@ -43,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         tvSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent(MainActivity.this,Activity_signup.class);
+                Intent i1 = new Intent(MainActivity.this,SignupActivity.class);
                 startActivity(i1);
             }
         });
