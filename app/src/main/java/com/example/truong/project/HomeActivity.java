@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
     public static EditText edt_search;
-    private Button qrcodobar;
+    private TextView qrcodobar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
 //        getSupportActionBar().hide();
           setContentView(R.layout.activity_home);
             edt_search = (EditText)findViewById(R.id.edt_search);
-            qrcodobar = (Button)findViewById(R.id.qrcodobar);
+            qrcodobar = (TextView)findViewById(R.id.qrcodobar);
 
              qrcodobar.setOnClickListener(new View.OnClickListener() {
                 @Override

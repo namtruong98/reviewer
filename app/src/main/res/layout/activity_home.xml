@@ -44,12 +44,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/logo_home"
-        tools:textSize="28sp" />
+        tools:textSize="18sp" />
 
     <EditText
         android:id="@+id/edt_search"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="42dp"
         android:layout_marginEnd="55dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="60dp"
@@ -67,18 +67,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/edt_qrcode"
+        android:id="@+id/qrcodobar"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="456dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="420dp"
         android:background="@drawable/edit_scancode"
+        android:drawableLeft="@mipmap/ic_barcode"
         android:ems="10"
-        android:hint="Scan code"
-        android:inputType="textPersonName"
-        android:paddingLeft="35dp"
         android:gravity="center"
+        android:hint="Scan code"
+        android:paddingRight="10dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="18dp"
         android:textColor="@color/ColorTextInput"
         android:textColorHint="@color/ColorTextHinQrcodeInput"
         android:textSize="16sp"
@@ -112,29 +114,14 @@
         android:layout_marginTop="8dp"
         android:text="policy and term"
         android:textColor="@color/colorOrHome"
-        android:textSize="22dp"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_qrcode"
+        app:layout_constraintTop_toBottomOf="@+id/qrcodobar"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/qrcodobar"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@mipmap/ic_qrcode"
-        app:layout_constraintBottom_toBottomOf="@+id/edt_qrcode"
-        app:layout_constraintEnd_toEndOf="@+id/edt_qrcode"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toStartOf="@+id/edt_qrcode"
-        app:layout_constraintTop_toTopOf="@+id/edt_qrcode"
-        tools:ignore="MissingConstraints" />
 
 
 </android.support.constraint.ConstraintLayout>

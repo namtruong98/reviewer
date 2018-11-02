@@ -7,7 +7,7 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class    ScanCodeActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
+public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
     private ZXingScannerView ScannerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
