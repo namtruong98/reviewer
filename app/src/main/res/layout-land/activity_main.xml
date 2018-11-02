@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/logo_home"
         android:layout_width="124dp"
-        android:layout_height="81dp"
+        android:layout_height="66dp"
         android:layout_marginEnd="118dp"
         android:layout_marginStart="118dp"
         android:background="@mipmap/logo_home"
@@ -24,11 +24,12 @@
         android:layout_height="32dp"
         android:layout_marginEnd="62dp"
         android:layout_marginStart="62dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="52dp"
         android:gravity="center_horizontal"
         android:text="Best place to find review"
         android:textColor="@color/colorNameDescription"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/logo_home"
         tools:textSize="18sp" />
@@ -99,7 +100,7 @@
     <TextView
         android:id="@+id/tt"
         android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
@@ -121,14 +122,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tt2"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toEndOf="@+id/tt"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tt2"
         android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:layout_height="19dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="60dp"
         android:layout_marginTop="8dp"
@@ -168,22 +170,21 @@
 
     <ImageButton
         android:id="@+id/btn_facebook"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="12dp"
         android:background="@drawable/facebook__gmail_round"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/or"
         app:srcCompat="@mipmap/ic_facebook" />
 
     <ImageButton
         android:id="@+id/btn_gmail"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
         android:layout_marginStart="87dp"
         android:background="@drawable/facebook__gmail_round"
         app:layout_constraintEnd_toEndOf="@+id/btn_facebook"
@@ -212,11 +213,12 @@
 
     <TextView
         android:id="@+id/tv_signup"
-        android:layout_width="47dp"
+        android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginStart="6dp"
         android:text="Signup"
         android:textColor="@color/ColorSign"
+        android:textStyle="bold"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/textView"

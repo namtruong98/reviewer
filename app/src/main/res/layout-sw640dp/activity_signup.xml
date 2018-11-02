@@ -10,19 +10,30 @@
     <ImageView
         android:id="@+id/logo_home"
         android:layout_width="184dp"
-        android:layout_height="99dp"
+        android:layout_height="104dp"
         android:layout_marginEnd="118dp"
         android:layout_marginStart="118dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="60dp"
         android:background="@mipmap/logo_home"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <ImageButton
+        android:layout_width="44dp"
+        android:layout_height="44sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/ic_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="62dp"
+        android:layout_height="92dp"
         android:layout_marginEnd="62dp"
         android:layout_marginStart="62dp"
         android:layout_marginTop="88dp"
@@ -34,101 +45,111 @@
         app:layout_constraintTop_toTopOf="@+id/logo_home"
         tools:textSize="34sp" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <EditText
+        android:id="@+id/edt_mail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="57dp"
-        android:layout_marginStart="60dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="28dp"
-        android:orientation="vertical"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Your email"
+        android:inputType="textPersonName"
+        android:paddingLeft="70dp"
+        android:textColor="@color/ColorTextInput"
+        android:textColorHint="@color/ColorTextInput"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <EditText
-            android:id="@+id/edt_mail"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:background="@drawable/edit_round"
-            android:ems="10"
-            android:hint="Your email"
-            android:inputType="textPersonName"
-            android:paddingLeft="100dp"
-            android:textColor="@color/ColorTextInput"
-            android:textColorHint="@color/ColorTextInput"
-            android:textSize="24sp" />
-        <!--android:drawableLeft="@mipmap/ic_mail"
-        android:paddingLeft="15dp"
-        android:drawablePadding="10dp"-->
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="70dp"
+        android:textColor="@color/ColorTextInput"
+        android:textColorHint="@color/ColorTextInput"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mail" />
 
-        <EditText
-            android:id="@+id/edt_password"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/edit_round"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPersonName"
-            android:paddingLeft="100dp"
-            android:textColor="@color/ColorTextInput"
-            android:textColorHint="@color/ColorTextInput"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/edt_YourName"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/edit_round"
-            android:ems="10"
-            android:hint="Your Name"
-            android:inputType="textPersonName"
-            android:paddingLeft="100dp"
-            android:textColor="@color/ColorTextInput"
-            android:textColorHint="@color/ColorTextInput"
-            android:textSize="24sp" />
-        <!--     android:drawableLeft="@mipmap/ic_password"
-             android:paddingLeft="15dp"
-             android:drawablePadding="10dp"-->
-
-    </LinearLayout>
+    <EditText
+        android:id="@+id/edt_YourName"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="70dp"
+        android:textColor="@color/ColorTextInput"
+        android:textColorHint="@color/ColorTextInput"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="80dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="76dp"
         android:background="@drawable/button_round"
         android:text="SignUp"
         android:textColor="@color/ColorTextLogin"
-        android:textSize="28dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_YourName" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="40dp"
-        android:layout_height="70dp"
-        app:srcCompat="@mipmap/ic_mail"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="246dp" />
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_mail"
+        app:layout_constraintEnd_toEndOf="@+id/edt_mail"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="@+id/edt_mail"
+        app:layout_constraintTop_toTopOf="@+id/edt_mail"
+        app:layout_constraintVertical_bias="0.687"
+        app:srcCompat="@mipmap/ic_mail" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="40dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_password"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toTopOf="@+id/edt_password"
+        app:layout_constraintVertical_bias="0.346"
         app:srcCompat="@mipmap/ic_password" />
 
     <TextView
@@ -140,24 +161,27 @@
         android:layout_marginTop="64dp"
         android:text="policy and term"
         android:textColor="@color/colorOrHome"
-        android:textSize="38dp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"
-        app:layout_constraintVertical_bias="0.966" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="40dp"
-        android:layout_height="70dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="92dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_YourName"
+        app:layout_constraintEnd_toEndOf="@+id/edt_YourName"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="@+id/edt_YourName"
+        app:layout_constraintTop_toTopOf="@+id/edt_YourName"
+        app:layout_constraintVertical_bias="0.413"
         app:srcCompat="@mipmap/ic_your_name" />
 
 

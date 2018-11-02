@@ -20,8 +20,8 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="F:\android app\icon\ic_yourname.png" />
-                                      <entry key="outputName" value="ic_your_name" />
+                                      <entry key="imageAsset" value="F:\android app\icon\qrcode.jpg" />
+                                      <entry key="outputName" value="ic_qrcode" />
                                     </map>
                                   </option>
                                 </PersistentState>

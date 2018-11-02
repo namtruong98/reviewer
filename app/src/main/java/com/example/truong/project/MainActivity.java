@@ -23,65 +23,31 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity {
-    private EditText edt_login_mail,edt_login_password;
-    private Button btnLogin,btn_fb,btn_gmail;
-    private FirebaseAuth firebaseAuth;
-    private TextView tv_signup;
+    private Button btnLogin;
+    private TextView tvSignup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
 //        getSupportActionBar().hide();
             setContentView(R.layout.activity_main);
-            LoginFr();
-            tv_signup = (TextView)findViewById(R.id.tv_signup);
-            tv_signup.setOnClickListener(new View.OnClickListener() {
+            btnLogin = (Button) findViewById(R.id.btn_login);
+            btnLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i1 = new Intent(MainActivity.this,Activity_signup.class);
+                    Intent i1 = new Intent(MainActivity.this,Activity_home.class);
                     startActivity(i1);
                 }
             });
-
-    }
-    private void LoginFr(){
-        edt_login_mail = (EditText)findViewById(R.id.edt_login_mail);
-        edt_login_password = (EditText)findViewById(R.id.edt_login_password);
-        btnLogin = (Button) findViewById(R.id.btn_login);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        tvSignup = (TextView)findViewById(R.id.tv_signup);
+        tvSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String mail = edt_login_mail.getText().toString().trim();
-                String password = edt_login_password.getText().toString().trim();
-                if (TextUtils.isEmpty(mail)){
-                    Toast.makeText(MainActivity.this, "Plase enter email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(password)){
-                    Toast.makeText(MainActivity.this, "Plase enter password", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                firebaseAuth = firebaseAuth.getInstance();
-                if (firebaseAuth.getCurrentUser()!= null){
-
-                }
-                firebaseAuth.signInWithEmailAndPassword(mail,password)
-                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()){
-                                    Toast.makeText(MainActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-                                }
-                                else {
-                                    Toast.makeText(MainActivity.this, "Login unsuccessful\n... Please try again", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
+                Intent i1 = new Intent(MainActivity.this,Activity_signup.class);
+                startActivity(i1);
             }
-
         });
-    }
-    private void LoginFacebook(){
 
     }
+
 }
